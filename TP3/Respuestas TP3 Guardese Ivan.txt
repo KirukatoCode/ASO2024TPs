@@ -1,0 +1,58 @@
+﻿GitHub: https://github.com/KirukatoCode/ASO2024TPs.git
+Alumno: Guardese Iván
+
+
+
+tareas_SIN_hilos.py
+
+¿Qué se puede notar con respecto al tiempo de ejecución? ¿Es predecible?
+Se puede notar con respecto al tiempo de ejecución que los segundos requeridos para completar cada tarea y por ende también completar todas, son diferentes en cada intento, ya sea en mayor o menor medida. Por lo que resulta ser impredecible.
+
+Ejemplo de proceso o función de la vida real que puede ser considerado proceso de "máxima velocidad posible" dependiendo casi exclusivamente de la velocidad de la máquina que lo ejecuta: Máquina contadora de billetes, ya que la rapidez con la que cuenta está definida por la máquina.
+
+Ejemplo de proceso o función de la vida real que puede ser considerado proceso de "velocidad de respuesta no dependiente de la velocidad de procesamiento" o de naturaleza impredecible/externa: Recepción de paquetes en un servicio de mensajería, ya que puede variar la rapidez con la que un paquete llegue.
+
+
+
+
+
+tareas_CON_hilos.py
+
+¿Qué se puede notar con respecto al tiempo de ejecución? ¿Se mejoró el tiempo de respuesta con respecto al mismo programa sin hilos?
+Se puede notar con respecto al tiempo de ejecución que ahora es más rápido y que también se mejoró el tiempo de respuesta con respecto al mismo programa sin hilos. Debido a que las tareas se ejecutaron en paralelo.
+
+¿Completan las funciones su ejecución en el orden establecido?
+No, las funciones no completan su ejecución en el orden establecido. Si bien todas inician al mismo tiempo, finaliza primero la tarea 2, luego la tarea 1 y por último la tarea 3.
+
+Ejemplo de un escenario real donde el multi-hilado puede mejorar considerablemente el tiempo de respuesta de un sistema: Procesamiento de solicitudes en un servidor web, ya que procesa en paralelo varias solicitudes de los usuarios al mismo tiempo para darles una devolución.
+
+
+
+
+
+sumador-restador.py
+sumador-restador_CON_race.py
+
+¿Qué se puede notar con respecto al tiempo de ejecución?
+Se puede notar con respecto al tiempo de ejecución que, al menos en mi caso, es prácticamente el mismo. Lo verifiqué muchas veces por si las dudas.
+
+¿Qué sucede con el valor final del acumulador?
+Sucede con el valor final del acumulador que varía, mayormente termina valiendo 5000, pero en ocasiones asume otros valores negativos. Todo esto en vez de ser 0 como en el código previo.
+
+¿Por qué sucede esto?
+Esto sucede porque ambos hilos se ejecutan al mismo tiempo, siendo que comparten un mismo recurso, la variable global, con la cual realizan procesos distintos en simultáneo.
+
+¿Cómo se puede corregir esta condición de carrera sin dejar de utilizar hilos?
+Se podría corregir esta condición de carrera sin dejar de utilizar hilos, implementando que ese recurso compartido solo esté disponible cuando ningún otro hilo lo esté usando, véase bloqueándolo temporalmente.
+
+
+
+
+
+sumador-restador_SIN_race.py
+
+¿Qué sucede con el valor final del acumulador?
+Sucede con el valor final del acumulador que ahora siempre es 0.
+
+¿Qué se puede notar con respecto al tiempo de ejecución?
+Se puede notar con respecto al tiempo de ejecución que, otra vez, al menos en mi caso, es prácticamente el mismo. Otra vez, lo verifiqué muchas veces por si las dudas.
