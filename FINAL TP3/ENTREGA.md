@@ -1,0 +1,5 @@
+![Captura de pantalla 2024-05-19 190624](https://github.com/KirukatoCode/ASO2024TPs/assets/167589187/2e528d62-d534-4291-a254-709ed040bc4b)
+![Captura de pantalla 2024-05-19 183652](https://github.com/KirukatoCode/ASO2024TPs/assets/167589187/33fc1a36-191f-4a8d-a173-f130c4190b4b)
+![Captura de pantalla 2024-05-19 202749](https://github.com/KirukatoCode/ASO2024TPs/assets/167589187/7dfb04ef-5285-4e3e-bce2-c030647d9541)
+![Captura de pantalla 2024-05-19 203146](https://github.com/KirukatoCode/ASO2024TPs/assets/167589187/f93acbc6-4cf1-4870-b5e9-4c22cddaed63)
+[Respuestas TP3 Guardese Ivan.txt](https://github.com/KirukatoCode/ASO2024TPs/files/15371349/Respuestas.TP3.Guardese.Ivan.txt)
